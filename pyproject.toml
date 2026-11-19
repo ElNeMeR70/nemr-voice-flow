@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nemr-voice-flow"
+version = "3.0.0"
+description = "Gemini 3.8 Live API Voice Agent, PCM16/WAV/G.711 u-law Audio Codec, TwiML Bridge, Escalation Memory & SQLite Booking Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mahmoud ElNeMeR", email = "contact@elnemer-ai.com" }]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ElNeMeR70/nemr-voice-flow"
+Repository = "https://github.com/ElNeMeR70/nemr-voice-flow"
+
+[project.scripts]
+nemr-voice = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["core"]
